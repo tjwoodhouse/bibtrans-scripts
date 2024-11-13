@@ -10,7 +10,9 @@ This is useful for generating audio of back translations
 
 - Run `chmod +x` for both scripts in this dir to make them executable.
 
-- Add "export PTPROJ_PATH=<paratext project folder>" to your bash/zshrc/etc file.
+- Add `export PTPROJ_PATH=<paratext project folder>` to your bash/zshrc/etc file.
+
+- Install `node` and make sure the package `usfm-grammar` is installed.
 
 # Usage
 
