@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiline Text Box</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/concrete.css/3.0.0/concrete.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<main>
+  <h1>Calculate total verses</h1>
+  <p>Enter verses using standard USFM book names.</p>
+  <textarea id="myTextBox" rows="4" cols="50"></textarea>
+  <p>Total: <span id="res-div"></span></p>
+  <button onclick="printTextBoxValue()">Calculate total verses</button>
+
+  <script src="calculate_verses.js"></script>
+  <script>
+    function printTextBoxValue() {
+      const textBox = document.getElementById("myTextBox");
+      const totalSpan = document.getElementById("res-div");
+      const textBoxValue = textBox.value;
+      totalSpan.innerHTML = calcTotals(textBoxValue);
+    }
+  </script>
+  </main>
+</body>
+</html>
